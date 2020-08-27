@@ -190,6 +190,9 @@ footer > * ul li a {
   grid-row: 2/span 1;
   margin-bottom: 3.2rem;
 }
+.welcome__section-container .content--pic img {
+  width: 100%;
+}
 
 /******************************/
 /************With Us***********/
