@@ -1,0 +1,222 @@
+.navbar {
+  background-color: #FCFCFC;
+  min-height: 6.5rem;
+}
+.navbar-brand {
+  display: inline-block;
+  width: 180px;
+  text-transform: uppercase;
+}
+.navbar-nav {
+  padding: 1.5rem 0;
+}
+.navbar-nav li {
+  padding-left: 2rem;
+}
+.navbar-nav li.active {
+  background-color: #e9ecf1;
+}
+.navbar-nav li.active a {
+  font-weight: 600;
+  color: #3675E5;
+}
+
+.header {
+  background-image: linear-gradient(to right, rgba(48, 48, 48, 0.3), rgba(48, 48, 48, 0.3)), url("../img/headerbg.png");
+  background-position: center;
+  min-height: 40rem;
+  background-size: cover;
+  padding: 9rem 3rem;
+}
+.header .ctas {
+  width: 80%;
+  margin: 4rem auto 0rem;
+}
+
+.navbar-toggler {
+  padding: 5px;
+}
+.navbar-toggler-icon {
+  margin: auto;
+  width: 3.5rem;
+  height: 2.7rem;
+}
+.navbar-toggler-icon img {
+  width: 100%;
+}
+
+.ctas > * {
+  display: block;
+  font-size: 1.8rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.ctas .primary {
+  background-color: #3675E5;
+  color: #fcfcfc;
+}
+.ctas .primary:hover {
+  background-color: #2860c0;
+}
+.ctas .secondary {
+  background-color: #fcfcfc;
+  color: #3675E5;
+  margin-top: 2rem;
+}
+.ctas .secondary:hover {
+  background-color: #e9ecf1;
+}
+
+footer {
+  background-color: #041C47;
+  padding: 9rem 6.6rem;
+}
+footer > *:not(:first-child) {
+  margin-top: 4.8rem;
+}
+footer .social ul {
+  margin-top: 1.5rem;
+}
+footer .social ul li {
+  display: inline-block;
+}
+footer .social ul li:not(:first-child) {
+  margin-left: 1.5rem;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Raleway";
+}
+
+h1 {
+  font-family: "Montserrat";
+}
+
+.navbar-brand {
+  font-family: "Montserrat";
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+.navbar-nav li a {
+  color: #303030;
+}
+
+.header .content {
+  color: #fcfcfc;
+  text-align: center;
+}
+.header .content .main {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-style: italic;
+  font-size: 3.2rem;
+  line-height: 135%;
+}
+.header .content .aside {
+  font-family: "Raleway";
+  font-size: 2.4rem;
+}
+
+/******************************/
+/*******Welcome****************/
+/******************************/
+.welcome__section-container h1 {
+  font-weight: 600;
+  font-size: 2.8rem;
+  text-align: center;
+}
+.welcome__section-container h1::after {
+  content: "";
+  height: 2px;
+  width: 6.4rem;
+  background-color: #3675E5;
+  display: block;
+  margin: 1rem auto 1.5rem;
+}
+.welcome__section-container .content--text {
+  line-height: 2.8rem;
+  font-size: 1.8rem;
+}
+
+.with-us .content h1 {
+  font-weight: 600;
+}
+.with-us .content h1::after {
+  content: "";
+  height: 2px;
+  width: 6.4rem;
+  background-color: #3675E5;
+  display: block;
+  margin: 1rem 0 1.5rem;
+}
+
+/******************************/
+/*******Welcome****************/
+/******************************/
+footer > * h2 {
+  color: #fcfcfc;
+  font-weight: 600;
+}
+footer > * h2::after {
+  content: "";
+  height: 2px;
+  width: 6.4rem;
+  background-color: #3675E5;
+  display: block;
+  width: 3.2rem;
+  background-color: #fcfcfc;
+  margin: 0.5rem 0 0.8rem;
+}
+footer > * ul {
+  list-style: none;
+  padding: 0;
+}
+footer > * ul li a {
+  color: #fcfcfc;
+}
+
+.welcome__section-container {
+  padding: 9rem 3rem;
+  background-color: #F2F5FC;
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+}
+.welcome__section-container .content--pic {
+  grid-row: 2/span 1;
+  margin-bottom: 3.2rem;
+}
+
+/******************************/
+/************With Us***********/
+/******************************/
+.with-us {
+  display: grid;
+  grid-template-columns: 3.6rem auto;
+}
+.with-us .pictwo {
+  background-image: linear-gradient(to right, rgba(54, 117, 229, 0.65), rgba(54, 117, 229, 0.65)), url("../img/worship.png");
+  height: 100%;
+  grid-column: 1/span 1;
+}
+.with-us .content {
+  padding: 9rem 3rem;
+}
+.with-us .content .info .at {
+  margin-top: 2rem;
+}
+.with-us .content .info .at p {
+  margin-bottom: 0.7rem;
+}
+.with-us .content .info .at p img {
+  width: 3.5rem;
+}
+.with-us .content .info .at p .label {
+  margin-left: 1rem;
+}
+
+/*# sourceMappingURL=style.css.map */
