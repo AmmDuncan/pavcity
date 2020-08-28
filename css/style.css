@@ -25,7 +25,7 @@
   display: inline-block;
 }
 .navbar-nav {
-  padding: 1.5rem 0;
+  padding: 1.5rem 0 0;
 }
 .navbar-nav li {
   padding: 1rem 0 1rem;
@@ -37,6 +37,9 @@
 .navbar-nav li.active a {
   font-weight: 600;
   color: #3675E5;
+}
+.navbar-nav .sep {
+  border-top: 1px solid rgba(54, 117, 229, 0.3);
 }
 
 .header {
@@ -61,6 +64,18 @@
 }
 .navbar-toggler-icon img {
   width: 100%;
+}
+
+.navbar-nav .nav-item .btn.primary {
+  background-color: #3675E5;
+  color: #fcfcfc;
+  display: block;
+  font-size: 1.8rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.navbar-nav .nav-item .btn.primary:hover {
+  background-color: #2860c0;
 }
 
 .ctas > * {
@@ -216,8 +231,10 @@ h1 {
 /******************************/
 /*******Welcome****************/
 /******************************/
-footer > * h2 {
+footer > * {
   color: #fcfcfc;
+}
+footer > * h2 {
   font-weight: 600;
 }
 footer > * h2::after {
@@ -263,6 +280,8 @@ footer > * ul li a {
   background-image: linear-gradient(to right, rgba(54, 117, 229, 0.65), rgba(54, 117, 229, 0.65)), url("../img/worship.png");
   height: 100%;
   grid-column: 1/span 1;
+  background-size: cover;
+  background-position: center;
 }
 .with-us .content {
   padding: 9rem 3rem 6rem;
