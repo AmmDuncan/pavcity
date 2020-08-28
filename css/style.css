@@ -14,9 +14,15 @@
   padding: 0.7rem 1rem;
 }
 .navbar-brand {
-  display: inline-block;
-  width: 180px;
+  display: inline-flex;
   text-transform: uppercase;
+  align-items: center;
+}
+.navbar-brand img {
+  height: 6rem;
+}
+.navbar-brand .logolabel {
+  display: inline-block;
 }
 .navbar-nav {
   padding: 1.5rem 0;
@@ -38,7 +44,7 @@
   background-position: center;
   min-height: 40rem;
   background-size: cover;
-  padding: 9rem 3rem;
+  padding: 9rem 3rem 6rem;
 }
 .header .ctas {
   width: 80%;
@@ -81,7 +87,7 @@
 
 footer {
   background-color: #041C47;
-  padding: 9rem 6.6rem;
+  padding: 9rem 6.6rem 6rem;
 }
 footer > *:not(:first-child) {
   margin-top: 4.8rem;
@@ -98,15 +104,18 @@ footer .social ul li:not(:first-child) {
 
 html {
   font-size: 10px;
+  scroll-behavior: smooth;
 }
 
 body {
   font-size: 1.6rem;
   font-family: "Raleway";
+  color: #454545;
 }
 
 h1 {
-  font-family: "Montserrat";
+  font-family: "Montserrat", "Segoe UI";
+  color: #454545;
 }
 
 .navbar-brand {
@@ -167,7 +176,10 @@ h1 {
 }
 .welcome__section-container .content--text {
   line-height: 2.8rem;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  padding: 0 1.6rem;
 }
 
 .with-us .content h1 {
@@ -180,6 +192,18 @@ h1 {
   background-color: #3675E5;
   display: block;
   margin: 1rem 0 1.5rem;
+}
+.with-us .content .info p {
+  margin: 0;
+  line-height: 145%;
+}
+.with-us .content .info .weekday {
+  font-weight: 600;
+  margin: 0;
+}
+.with-us .content .info .name {
+  font-style: italic;
+  margin-top: 0.5rem;
 }
 
 /******************************/
@@ -208,8 +232,8 @@ footer > * ul li a {
 }
 
 .welcome__section-container {
-  padding: 9rem 3rem;
-  background-color: #F2F5FC;
+  padding: 9rem 3rem 6rem;
+  background-color: #f6f7fa;
   display: grid;
   grid-template-rows: repeat(3, auto);
 }
@@ -234,7 +258,7 @@ footer > * ul li a {
   grid-column: 1/span 1;
 }
 .with-us .content {
-  padding: 9rem 3rem;
+  padding: 9rem 3rem 6rem;
 }
 .with-us .content .info .at {
   margin-top: 2rem;
@@ -243,10 +267,22 @@ footer > * ul li a {
   margin-bottom: 0.7rem;
 }
 .with-us .content .info .at p img {
-  width: 3.5rem;
+  width: 2.5rem;
 }
 .with-us .content .info .at p .label {
   margin-left: 1rem;
+}
+.with-us .content .info .schedule {
+  background-color: #f6f7fa;
+  margin-top: 2rem;
+  padding: 3rem;
+}
+.with-us .content .info .schedule .day:not(:last-child) {
+  margin-bottom: 2rem;
+}
+.with-us .content .info .schedule .day .time img {
+  width: 2rem;
+  margin-right: 0.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */
