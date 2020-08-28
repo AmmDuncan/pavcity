@@ -197,6 +197,13 @@ h1 {
   margin: 0;
   line-height: 145%;
 }
+.with-us .content .info .at {
+  font-weight: 500;
+  color: #3675E5;
+}
+.with-us .content .info .at .label {
+  font-weight: 700;
+}
 .with-us .content .info .weekday {
   font-weight: 600;
   margin: 0;
@@ -268,9 +275,10 @@ footer > * ul li a {
 }
 .with-us .content .info .at p img {
   width: 2.5rem;
+  margin-right: 0.8rem;
 }
 .with-us .content .info .at p .label {
-  margin-left: 1rem;
+  margin-left: 0.3rem;
 }
 .with-us .content .info .schedule {
   background-color: #f6f7fa;
