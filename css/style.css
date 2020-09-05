@@ -98,7 +98,8 @@
 }
 @media only screen and (min-width: 768px) {
   .header {
-    background-image: linear-gradient(to right, rgba(48, 48, 48, 0.3), rgba(48, 48, 48, 0.3)), url("../img/headerbg.png");
+    background-image: linear-gradient(to right, rgba(48, 48, 48, 0.3), rgba(48, 48, 48, 0.3)), url("../img/headerbg1.jpg");
+    background-attachment: fixed;
     padding: 14rem 3rem 32rem;
   }
   .header .ctas {
