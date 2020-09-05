@@ -73,7 +73,7 @@
 }
 
 .header {
-  background-image: linear-gradient(to right, rgba(48, 48, 48, 0.3), rgba(48, 48, 48, 0.3)), url("../img/headerbg-mob.png");
+  background-image: linear-gradient(to right, rgba(48, 48, 48, 0.3), rgba(48, 48, 48, 0.3)), url("../img/headerbg1.jpg");
   background-position: center;
   min-height: 40rem;
   background-size: cover;
