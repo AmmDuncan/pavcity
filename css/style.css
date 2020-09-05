@@ -11,7 +11,7 @@
 
 .navbar {
   background-color: #FCFCFC;
-  padding: 0.7rem 1rem;
+  padding: 0.8rem 1.6rem;
 }
 .navbar-brand {
   display: inline-flex;
@@ -38,20 +38,72 @@
   font-weight: 600;
   color: #3675E5;
 }
+.navbar-nav li.active a:hover {
+  color: #2860c0;
+}
+.navbar-nav li:hover a {
+  color: #2860c0;
+}
 .navbar-nav .sep {
   border-top: 1px solid rgba(54, 117, 229, 0.3);
 }
+@media only screen and (min-width: 768px) {
+  .navbar {
+    padding: 0.4rem 1.6rem;
+  }
+  .navbar #navbarSupportedContent {
+    justify-content: flex-end;
+  }
+  .navbar-nav {
+    padding-top: 0px;
+  }
+  .navbar-nav li {
+    padding: 0.2rem 0.5rem;
+    align-self: center;
+  }
+  .navbar-nav li.active {
+    background-color: #fcfcfc;
+  }
+  .navbar-nav li.active a {
+    color: #3675E5;
+  }
+  .navbar-nav .sep {
+    border-top: none;
+  }
+}
 
 .header {
-  background-image: linear-gradient(to right, rgba(48, 48, 48, 0.3), rgba(48, 48, 48, 0.3)), url("../img/headerbg.png");
+  background-image: linear-gradient(to right, rgba(48, 48, 48, 0.3), rgba(48, 48, 48, 0.3)), url("../img/headerbg-mob.png");
   background-position: center;
   min-height: 40rem;
   background-size: cover;
-  padding: 9rem 3rem 6rem;
+  padding: 9.6rem 3rem 7.2rem;
+  z-index: 50;
+  position: relative;
 }
 .header .ctas {
   width: 80%;
-  margin: 4rem auto 0rem;
+  margin: 3.2rem auto 0rem;
+}
+@media only screen and (min-width: 540px) {
+  .header {
+    padding: 11.2rem 3rem 10.4rem;
+    min-height: 65rem;
+  }
+  .header .ctas {
+    display: flex;
+    justify-content: space-around;
+    width: 40rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .header {
+    background-image: linear-gradient(to right, rgba(48, 48, 48, 0.3), rgba(48, 48, 48, 0.3)), url("../img/headerbg.png");
+    padding: 14rem 3rem 32rem;
+  }
+  .header .ctas {
+    width: 44rem;
+  }
 }
 
 .navbar-toggler {
@@ -70,40 +122,95 @@
   background-color: #3675E5;
   color: #fcfcfc;
   display: block;
-  font-size: 1.8rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
   font-size: 1.6rem;
+  padding: 1.2rem;
+  font-weight: 500;
+  font-size: 1.6rem;
+}
+@media only screen and (min-width: 540px) {
+  .navbar-nav .nav-item .btn.primary {
+    padding: 1.2rem 2.4rem;
+    display: inline-block;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .navbar-nav .nav-item .btn.primary {
+    padding: 1.2rem 3.2rem;
+    display: inline-block;
+  }
 }
 .navbar-nav .nav-item .btn.primary:hover {
   background-color: #2860c0;
 }
+@media only screen and (min-width: 768px) {
+  .navbar-nav .nav-item .btn.primary {
+    padding: 1.2rem 2.4rem;
+  }
+}
 
 .ctas > * {
   display: block;
-  font-size: 1.8rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  font-size: 1.6rem;
 }
 .ctas .primary {
+  display: block;
+  font-size: 1.6rem;
+  padding: 1.2rem;
+  font-weight: 500;
   background-color: #3675E5;
   color: #fcfcfc;
+}
+@media only screen and (min-width: 540px) {
+  .ctas .primary {
+    padding: 1.2rem 2.4rem;
+    display: inline-block;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .ctas .primary {
+    padding: 1.2rem 3.2rem;
+    display: inline-block;
+  }
 }
 .ctas .primary:hover {
   background-color: #2860c0;
 }
 .ctas .secondary {
+  display: block;
+  font-size: 1.6rem;
+  padding: 1.2rem;
+  font-weight: 500;
   background-color: #fcfcfc;
   color: #3675E5;
   margin-top: 2rem;
 }
+@media only screen and (min-width: 540px) {
+  .ctas .secondary {
+    padding: 1.2rem 2.4rem;
+    display: inline-block;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .ctas .secondary {
+    padding: 1.2rem 3.2rem;
+    display: inline-block;
+  }
+}
 .ctas .secondary:hover {
   background-color: #e9ecf1;
+}
+@media only screen and (min-width: 540px) {
+  .ctas .secondary {
+    margin-top: 0;
+  }
+  .ctas .secondary:hover {
+    background-color: #e9ecf1;
+  }
 }
 
 footer {
   background-color: #041C47;
-  padding: 9rem 6.6rem 6rem;
+  padding: 8.8rem 6.4rem 6.4rem;
 }
 footer > *:not(:first-child) {
   margin-top: 4.8rem;
@@ -132,11 +239,17 @@ body {
 h1 {
   font-family: "Montserrat", "Segoe UI";
   color: #454545;
+  font-size: 3.2rem;
+}
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 3.6rem;
+  }
 }
 
 .navbar-brand {
   font-family: "Montserrat";
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: 700;
 }
 .navbar-nav li a {
@@ -173,13 +286,27 @@ h1 {
   font-family: "Raleway";
   font-size: 2.4rem;
 }
+@media only screen and (min-width: 768px) {
+  .header .content .main {
+    font-size: 3.6rem;
+  }
+  .header .content .main::before {
+    left: -3.2rem;
+    top: -2.4rem;
+    font-size: 8.8rem;
+  }
+  .header .content .main::after {
+    right: -1.6rem;
+    bottom: -3.2rem;
+    font-size: 8.8rem;
+  }
+}
 
 /******************************/
 /*******Welcome****************/
 /******************************/
 .welcome__section-container h1 {
-  font-weight: 600;
-  font-size: 2.8rem;
+  font-weight: 700;
   text-align: center;
 }
 .welcome__section-container h1::after {
@@ -188,7 +315,7 @@ h1 {
   width: 6.4rem;
   background-color: #3675E5;
   display: block;
-  margin: 1rem auto 1.5rem;
+  margin: 0.8rem auto 2.4rem;
 }
 .welcome__section-container .content--text {
   line-height: 2.8rem;
@@ -199,7 +326,7 @@ h1 {
 }
 
 .with-us .content h1 {
-  font-weight: 600;
+  font-weight: 700;
 }
 .with-us .content h1::after {
   content: "";
@@ -207,7 +334,7 @@ h1 {
   width: 6.4rem;
   background-color: #3675E5;
   display: block;
-  margin: 1rem 0 1.5rem;
+  margin: 0.8rem 0 2.4rem;
 }
 .with-us .content .info p {
   margin: 0;
@@ -256,8 +383,28 @@ footer > * ul li a {
   color: #fcfcfc;
 }
 
+.limit {
+  width: 100%;
+}
+@media only screen and (min-width: 768px) {
+  .limit {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .limit {
+    width: 85rem;
+    margin: 0 auto;
+  }
+}
+
+.welcome__section {
+  background-color: #e9ecf1;
+}
 .welcome__section-container {
-  padding: 9rem 3rem 6rem;
+  padding: 8.8rem 3.2rem 5.6rem;
+  margin: 0 auto;
   background-color: #f6f7fa;
   display: grid;
   grid-template-rows: repeat(3, auto);
@@ -265,15 +412,73 @@ footer > * ul li a {
 .welcome__section-container .content--pic {
   grid-row: 2/span 1;
   margin-bottom: 3.2rem;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
 }
 .welcome__section-container .content--pic img {
   width: 100%;
+}
+@media only screen and (min-width: 768px) {
+  .welcome__section {
+    padding-bottom: 8.8rem;
+  }
+  .welcome__section-container {
+    padding: 5.4rem 4.8rem;
+    width: 80%;
+    margin: -24rem auto 0;
+    box-shadow: 0 1.2rem 4rem rgba(48, 48, 48, 0.25);
+    border-radius: 5px;
+    z-index: 100;
+    position: relative;
+  }
+  .welcome__section-container h1 {
+    grid-column: span 2;
+  }
+  .welcome__section-container .content--text {
+    padding-right: 2.4rem;
+    padding-left: 0;
+  }
+  .welcome__section-container .content--pic {
+    grid-row: 2/span 1;
+    grid-column: 2/span 1;
+    margin-bottom: 0;
+    overflow: hidden;
+  }
+  .welcome__section-container .content--pic img {
+    height: 100%;
+    width: auto;
+    margin: 0 auto;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .welcome__section-container {
+    padding-top: 5.4rem;
+    width: 82.4rem;
+    margin: -24rem auto 0;
+    box-shadow: 0 1.2rem 4rem rgba(48, 48, 48, 0.25);
+    border-radius: 5px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .welcome__section-container h1 {
+    grid-column: span 2;
+  }
+  .welcome__section-container .content--pic {
+    grid-row: 2/span 1;
+    grid-column: 2/span 1;
+    margin-bottom: 3.2rem;
+  }
+  .welcome__section-container .content--pic img {
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 
 /******************************/
 /************With Us***********/
 /******************************/
 .with-us {
+  position: relative;
   display: grid;
   grid-template-columns: 3.6rem auto;
 }
@@ -285,7 +490,7 @@ footer > * ul li a {
   background-position: center;
 }
 .with-us .content {
-  padding: 9rem 3rem 6rem;
+  padding: 8.8rem 3.2rem 6.4rem;
 }
 .with-us .content .info .at {
   margin-top: 2rem;
