@@ -429,20 +429,22 @@ footer > * ul li a {
     width: 80%;
     margin: -24rem auto 0;
     box-shadow: 0 1.2rem 4rem rgba(48, 48, 48, 0.25);
+    grid-template-columns: repeat(5, 1fr);
     border-radius: 5px;
     z-index: 100;
     position: relative;
   }
   .welcome__section-container h1 {
-    grid-column: span 2;
+    grid-column: span 5;
   }
   .welcome__section-container .content--text {
     padding-right: 2.4rem;
     padding-left: 0;
+    grid-column: 1/span 3;
   }
   .welcome__section-container .content--pic {
     grid-row: 2/span 1;
-    grid-column: 2/span 1;
+    grid-column: 4/span 2;
     margin-bottom: 0;
     overflow: hidden;
   }
@@ -463,6 +465,9 @@ footer > * ul li a {
   }
   .welcome__section-container h1 {
     grid-column: span 2;
+  }
+  .welcome__section-container .content--text {
+    grid-column: 1/span 1;
   }
   .welcome__section-container .content--pic {
     grid-row: 2/span 1;
