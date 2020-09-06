@@ -40,10 +40,10 @@
   color: #1455c5;
 }
 .navbar-nav li.active a:hover {
-  color: #0c3b8d;
+  color: #0a41a1;
 }
 .navbar-nav li:hover a {
-  color: #0c3b8d;
+  color: #0a41a1;
 }
 .navbar-nav .sep {
   border-top: 1px solid rgba(20, 85, 197, 0.3);
@@ -141,7 +141,7 @@
   }
 }
 .navbar-nav .nav-item .btn.primary:hover {
-  background-color: #0c3b8d;
+  background-color: #0a41a1;
 }
 @media only screen and (min-width: 768px) {
   .navbar-nav .nav-item .btn.primary {
@@ -174,7 +174,7 @@
   }
 }
 .ctas .primary:hover {
-  background-color: #0c3b8d;
+  background-color: #0a41a1;
 }
 .ctas .secondary {
   display: block;
