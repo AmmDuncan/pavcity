@@ -94,7 +94,7 @@
   .header .ctas {
     display: flex;
     justify-content: space-around;
-    width: 40rem;
+    width: 36.4rem;
   }
 }
 @media only screen and (min-width: 645px) {
@@ -103,7 +103,7 @@
     padding: 14rem 3rem 24rem;
   }
   .header .ctas {
-    width: 44rem;
+    width: 40rem;
   }
 }
 
@@ -134,7 +134,7 @@
     display: inline-block;
   }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 645px) {
   .navbar-nav .nav-item .btn.primary {
     padding: 1.2rem 3.2rem;
     display: inline-block;
@@ -167,7 +167,7 @@
     display: inline-block;
   }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 645px) {
   .ctas .primary {
     padding: 1.2rem 3.2rem;
     display: inline-block;
@@ -191,7 +191,7 @@
     display: inline-block;
   }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 645px) {
   .ctas .secondary {
     padding: 1.2rem 3.2rem;
     display: inline-block;
