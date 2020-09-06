@@ -89,7 +89,7 @@
 @media only screen and (min-width: 540px) {
   .header {
     padding: 11.2rem 3rem 10.4rem;
-    min-height: 65rem;
+    min-height: 55.6rem;
   }
   .header .ctas {
     display: flex;
