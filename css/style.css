@@ -440,6 +440,7 @@ footer > * ul li a {
     margin-top: 8px;
     margin-bottom: 0;
     overflow: hidden;
+    max-height: 28rem;
   }
   .welcome__section-container .content--pic img {
     height: 100%;
