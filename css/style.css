@@ -78,7 +78,7 @@
   background-position: center;
   min-height: 40rem;
   background-size: cover;
-  padding: 9.6rem 3rem 7.2rem;
+  padding: 9.6rem 3rem 9.6rem;
   z-index: 50;
   position: relative;
 }
@@ -88,8 +88,8 @@
 }
 @media only screen and (min-width: 540px) {
   .header {
-    padding: 11.2rem 3rem 10.4rem;
-    min-height: 55.6rem;
+    padding: 14.8rem 3rem 14.8rem;
+    min-height: 50rem;
   }
   .header .ctas {
     display: flex;
@@ -97,7 +97,7 @@
     width: 40rem;
   }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 645px) {
   .header {
     background-image: linear-gradient(to right, rgba(48, 48, 48, 0.3), rgba(48, 48, 48, 0.3)), url("../img/headerbg1.jpg");
     padding: 14rem 3rem 32rem;
@@ -263,54 +263,36 @@ h1 {
 }
 .header .content .main {
   font-family: "Montserrat";
-  font-weight: 700;
-  font-style: italic;
-  font-size: 3.2rem;
-  line-height: 135%;
+  font-weight: 900;
+  font-size: 4rem;
+  line-height: 110%;
   position: relative;
-}
-.header .content .main::before {
-  content: '"';
-  font-size: 6.5rem;
-  position: absolute;
-  left: -1rem;
-  top: -1.5rem;
-}
-.header .content .main::after {
-  content: '"';
-  font-size: 6.5rem;
-  position: absolute;
-  right: -1rem;
-  bottom: -1.5rem;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+  color: #fcfcfc;
 }
 .header .content .aside {
   font-family: "Raleway";
-  font-size: 2.4rem;
+  font-size: 1.6rem;
+  margin-bottom: 6.4rem;
 }
 @media only screen and (min-width: 768px) {
   .header .content .main {
-    font-size: 3.6rem;
-  }
-  .header .content .main::before {
-    left: -3.2rem;
-    top: -2.4rem;
-    font-size: 8.8rem;
-  }
-  .header .content .main::after {
-    right: -1.6rem;
-    bottom: -3.2rem;
-    font-size: 8.8rem;
+    font-size: 4.8rem;
+    line-height: 100%;
   }
 }
 
 /******************************/
 /*******Welcome****************/
 /******************************/
-.welcome__section-container h1 {
+.welcome__section-container h2 {
   font-weight: 700;
+  font-family: "Montserrat";
   text-align: center;
+  font-size: 3.2rem;
 }
-.welcome__section-container h1::after {
+.welcome__section-container h2::after {
   content: "";
   height: 2px;
   width: 6.4rem;
@@ -324,6 +306,10 @@ h1 {
   font-weight: 400;
   letter-spacing: 0.3px;
   padding: 0 1.6rem;
+}
+.welcome__section-container .content--text .attention {
+  color: #1455c5;
+  font-weight: 600;
 }
 
 .with-us .content h2 {
@@ -392,7 +378,8 @@ footer > * ul li a {
 }
 
 .limit {
-  width: 100%;
+  width: 95%;
+  margin: 0 auto;
 }
 @media only screen and (min-width: 768px) {
   .limit {
@@ -402,7 +389,7 @@ footer > * ul li a {
 }
 @media only screen and (min-width: 992px) {
   .limit {
-    width: 85rem;
+    width: 90rem;
     margin: 0 auto;
   }
 }
@@ -427,7 +414,7 @@ footer > * ul li a {
 .welcome__section-container .content--pic img {
   width: 100%;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 645px) {
   .welcome__section {
     padding-bottom: 8.8rem;
   }
@@ -441,7 +428,7 @@ footer > * ul li a {
     z-index: 100;
     position: relative;
   }
-  .welcome__section-container h1 {
+  .welcome__section-container h2 {
     grid-column: span 5;
   }
   .welcome__section-container .content--text {
@@ -463,18 +450,20 @@ footer > * ul li a {
 }
 @media only screen and (min-width: 992px) {
   .welcome__section-container {
-    padding-top: 5.4rem;
-    width: 82.4rem;
+    padding: 5.6rem 6.4rem;
+    width: 74.8rem;
     margin: -24rem auto 0;
     box-shadow: 0 1.2rem 4rem rgba(48, 48, 48, 0.25);
     border-radius: 5px;
     grid-template-columns: repeat(2, 1fr);
   }
-  .welcome__section-container h1 {
+  .welcome__section-container h2 {
     grid-column: span 2;
   }
   .welcome__section-container .content--text {
     grid-column: 1/span 1;
+    display: flex;
+    align-self: center;
   }
   .welcome__section-container .content--pic {
     grid-row: 2/span 1;
