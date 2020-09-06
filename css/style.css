@@ -100,7 +100,7 @@
 @media only screen and (min-width: 645px) {
   .header {
     background-image: linear-gradient(to right, rgba(48, 48, 48, 0.3), rgba(48, 48, 48, 0.3)), url("../img/headerbg1.jpg");
-    padding: 14rem 3rem 32rem;
+    padding: 14rem 3rem 24rem;
   }
   .header .ctas {
     width: 44rem;
@@ -308,7 +308,6 @@ h1 {
   padding: 0 1.6rem;
 }
 .welcome__section-container .content--text .attention {
-  color: #1455c5;
   font-weight: 600;
 }
 
@@ -421,7 +420,7 @@ footer > * ul li a {
   .welcome__section-container {
     padding: 5.4rem 4.8rem;
     width: 80%;
-    margin: -24rem auto 0;
+    margin: -16rem auto 0;
     box-shadow: 0 1.2rem 4rem rgba(48, 48, 48, 0.25);
     grid-template-columns: repeat(5, 1fr);
     border-radius: 5px;
@@ -452,7 +451,7 @@ footer > * ul li a {
   .welcome__section-container {
     padding: 5.6rem 6.4rem;
     width: 74.8rem;
-    margin: -24rem auto 0;
+    margin: -16rem auto 0;
     box-shadow: 0 1.2rem 4rem rgba(48, 48, 48, 0.25);
     border-radius: 5px;
     grid-template-columns: repeat(2, 1fr);
