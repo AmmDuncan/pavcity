@@ -325,10 +325,17 @@ h1 {
   padding: 0 1.6rem;
 }
 
-.with-us .content h1 {
+.with-us .content h2 {
   font-weight: 700;
+  font-family: "Montserrat";
+  font-size: 3.2rem;
 }
-.with-us .content h1::after {
+@media only screen and (min-width: 768px) {
+  .with-us .content h2 {
+    font-size: 3.6rem;
+  }
+}
+.with-us .content h2::after {
   content: "";
   height: 2px;
   width: 6.4rem;
