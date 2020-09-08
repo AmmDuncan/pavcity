@@ -210,7 +210,7 @@
 }
 
 footer {
-  background-color: #041C47;
+  background-color: #0a41a1;
   padding: 8.8rem 6.4rem 6.4rem;
 }
 footer > *:not(:first-child) {
@@ -225,6 +225,34 @@ footer .social ul li {
 footer .social ul li:not(:first-child) {
   margin-left: 1.5rem;
 }
+@media only screen and (min-width: 645px) {
+  footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  footer > * {
+    grid-column: span 1;
+  }
+  footer > *:not(:first-child) {
+    margin-top: 0;
+  }
+}
+@media only screen and (min-width: 845px) {
+  footer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  footer .group {
+    grid-column: -1;
+  }
+}
+@media only screen and (min-width: 992px) {
+  footer {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  footer .group {
+    grid-column: -1;
+  }
+}
 
 html {
   font-size: 10px;
@@ -235,17 +263,6 @@ body {
   font-size: 1.6rem;
   font-family: "Raleway";
   color: #454545;
-}
-
-h1 {
-  font-family: "Montserrat", "Segoe UI";
-  color: #454545;
-  font-size: 3.2rem;
-}
-@media only screen and (min-width: 768px) {
-  h1 {
-    font-size: 3.6rem;
-  }
 }
 
 .navbar-brand {
@@ -301,7 +318,7 @@ h1 {
   margin: 0.8rem auto 2.4rem;
 }
 .welcome__section-container .content--text {
-  line-height: 2.8rem;
+  line-height: 2.4rem;
   font-size: 1.6rem;
   font-weight: 400;
   letter-spacing: 0.3px;
@@ -309,6 +326,35 @@ h1 {
 }
 .welcome__section-container .content--text .attention {
   font-weight: 600;
+}
+
+.about h2 {
+  font-family: "Montserrat", "Segoe UI";
+  color: #454545;
+  font-size: 3.2rem;
+  font-weight: 700;
+  text-align: center;
+  color: #fcfcfc;
+}
+@media only screen and (min-width: 768px) {
+  .about h2 {
+    font-size: 3.6rem;
+  }
+}
+.about h2::after {
+  content: "";
+  height: 2px;
+  width: 6.4rem;
+  background-color: #1455c5;
+  display: block;
+  margin: 0.8rem auto 2.4rem;
+  background-color: #fcfcfc;
+}
+.about__card--text h3 {
+  font-family: "Montserrat";
+  font-weight: 600;
+  margin-bottom: 1.6rem;
+  font-size: 2.4rem;
 }
 
 .with-us .content h2 {
@@ -357,6 +403,7 @@ footer > * {
 }
 footer > * h2 {
   font-weight: 600;
+  color: #fcfcfc;
 }
 footer > * h2::after {
   content: "";
@@ -394,7 +441,7 @@ footer > * ul li a {
 }
 
 .welcome__section {
-  background-color: #e9ecf1;
+  background-color: #fcfcfc;
 }
 .welcome__section-container {
   padding: 8.8rem 3.2rem 5.6rem;
@@ -420,6 +467,7 @@ footer > * ul li a {
   .welcome__section-container {
     padding: 5.4rem 4.8rem 4rem;
     width: 80%;
+    max-width: 65.6rem;
     margin: -16rem auto 0;
     box-shadow: 0 1.2rem 4rem rgba(48, 48, 48, 0.25);
     grid-template-columns: repeat(3, 1fr);
@@ -440,36 +488,93 @@ footer > * ul li a {
     margin-top: 8px;
     margin-bottom: 0;
     overflow: hidden;
-    max-height: 28rem;
+    max-height: 20rem;
   }
   .welcome__section-container .content--pic img {
     height: 100%;
     width: auto;
     margin: 0 auto;
+    max-height: 20rem;
+    border-radius: 5px;
   }
 }
 @media only screen and (min-width: 992px) {
   .welcome__section-container {
-    padding: 5.6rem 6.4rem 4rem;
-    width: 74.8rem;
+    box-sizing: border-box;
+    padding: 5.6rem;
+    max-width: 80rem;
     margin: -16rem auto 0;
     box-shadow: 0 1.2rem 4rem rgba(48, 48, 48, 0.25);
+    column-gap: 3.2rem;
     border-radius: 5px;
   }
   .welcome__section-container .content--text {
     display: flex;
-    align-self: flex-start;
+    align-items: center;
+    padding-left: 0;
   }
   .welcome__section-container .content--text p {
     margin-bottom: 0;
   }
   .welcome__section-container .content--pic {
     grid-row: 2/span 1;
-    margin-bottom: 3.2rem;
+    max-width: 68rem;
+    display: block;
   }
   .welcome__section-container .content--pic img {
-    width: 100%;
+    height: 100%;
     margin: 0 auto;
+    max-height: 32rem;
+    overflow: hidden;
+  }
+}
+
+/******************************/
+/************About  ***********/
+/******************************/
+.about {
+  padding: 8.8rem 4.8rem 6.4rem;
+  background-color: #0a41a1;
+}
+.about .wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(auto, 24rem));
+  grid-template-rows: repeat(2, 1fr);
+  gap: 5.6rem;
+  margin: 2.4rem auto 0;
+  max-width: 48rem;
+}
+.about__card {
+  box-shadow: 0 1.6rem 3.2rem rgba(6, 54, 157, 0.3);
+  padding: 4rem;
+  background-color: #1455c5;
+  color: #fcfcfc;
+}
+.about__card--pic {
+  display: flex;
+  align-content: center;
+  min-height: 12.8rem;
+}
+.about__card.vision {
+  grid-column: span 2;
+}
+.about__card.mission {
+  grid-column: span 2;
+}
+@media only screen and (min-width: 768px) {
+  .about .wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    max-width: 92rem;
+    gap: 4rem;
+  }
+  .about__card.vision {
+    grid-column: span 1;
+    grid-row: span 2;
+  }
+  .about__card.mission {
+    grid-column: span 1;
+    grid-row: span 2;
   }
 }
 
@@ -482,7 +587,7 @@ footer > * ul li a {
   grid-template-columns: 3.6rem auto;
 }
 .with-us .pictwo {
-  background-image: linear-gradient(to right, rgba(20, 85, 197, 0.65), rgba(20, 85, 197, 0.65)), url("../img/worship.png");
+  background-image: linear-gradient(to right, rgba(20, 85, 197, 0.65), rgba(20, 85, 197, 0.65)), url("../img/worship.jpg");
   height: 100%;
   grid-column: 1/span 1;
   background-size: cover;
@@ -515,6 +620,49 @@ footer > * ul li a {
 .with-us .content .info .schedule .day .time img {
   width: 2rem;
   margin-right: 0.5rem;
+}
+@media only screen and (min-width: 768px) {
+  .with-us {
+    grid-template-columns: minmax(4rem, 9.6rem) 14.4rem minmax(auto, 50rem);
+  }
+  .with-us .pictwo {
+    background-image: linear-gradient(to right, rgba(20, 85, 197, 0.3), rgba(20, 85, 197, 0.3)), url("../img/worship.jpg");
+    height: 100%;
+    grid-column: 2/span 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+  }
+  .with-us .content .schedule .day .weekday {
+    display: inline-block;
+  }
+  .with-us .content .schedule .day .time {
+    display: inline-block;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .with-us {
+    grid-template-columns: minmax(14.4rem, 17.6rem) 17.6rem minmax(auto, auto);
+  }
+  .with-us .pictwo {
+    background-image: linear-gradient(to right, rgba(20, 85, 197, 0.3), rgba(20, 85, 197, 0.3)), url("../img/worship.jpg");
+    height: 100%;
+    grid-column: 2/span 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+  }
+  .with-us .content {
+    width: 97%;
+    max-width: 90rem;
+    margin: 0 auto;
+  }
+  .with-us .content .schedule .day .weekday {
+    display: inline-block;
+  }
+  .with-us .content .schedule .day .time {
+    display: inline-block;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
