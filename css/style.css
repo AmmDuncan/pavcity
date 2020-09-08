@@ -1,5 +1,5 @@
 .loader {
-  background-color: #fcfcfc;
+  background-color: #d41c1c;
   display: flex;
   width: 100vw;
   height: 100vh;
@@ -281,7 +281,7 @@ body {
 .header .content .main {
   font-family: "Montserrat";
   font-weight: 900;
-  font-size: 4rem;
+  font-size: 3.2rem;
   line-height: 110%;
   position: relative;
   text-transform: uppercase;
@@ -588,11 +588,11 @@ footer > * ul li a {
   grid-template-columns: 3.6rem auto;
 }
 .with-us .pictwo {
-  background-image: linear-gradient(to right, rgba(20, 85, 197, 0.3), rgba(20, 85, 197, 0.3)), url("../img/worship.jpg");
+  background-image: linear-gradient(to right, rgba(20, 85, 197, 0.55), rgba(20, 85, 197, 0.55)), url("../img/worship.jpg");
   height: 100%;
   grid-column: 1/span 1;
   background-size: cover;
-  background-position: center;
+  background-position: right;
 }
 .with-us .content {
   padding: 8.8rem 3.2rem 6.4rem;
