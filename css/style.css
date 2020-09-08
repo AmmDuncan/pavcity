@@ -94,7 +94,7 @@
   .header .ctas {
     display: flex;
     justify-content: space-around;
-    width: 36.4rem;
+    width: 42.4rem;
   }
 }
 @media only screen and (min-width: 645px) {
@@ -103,7 +103,7 @@
     padding: 14rem 3rem 24rem;
   }
   .header .ctas {
-    width: 40rem;
+    width: 46.4rem;
   }
 }
 
@@ -533,15 +533,16 @@ footer > * ul li a {
 /************About  ***********/
 /******************************/
 .about {
-  padding: 8.8rem 4.8rem 6.4rem;
+  padding: 8.8rem 2.4rem 6.4rem;
   background-color: #0a41a1;
 }
 .about .wrapper {
   display: grid;
-  grid-template-columns: repeat(2, minmax(auto, 24rem));
+  grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  gap: 5.6rem;
+  row-gap: 5.6rem;
   margin: 2.4rem auto 0;
+  width: 95%;
   max-width: 48rem;
 }
 .about__card {
