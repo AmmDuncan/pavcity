@@ -15,6 +15,7 @@
   position: fixed;
   width: 100%;
   z-index: 1000;
+  top: 0;
 }
 .navbar-brand {
   display: inline-flex;
@@ -81,10 +82,9 @@
   background-position: center;
   min-height: 40rem;
   background-size: cover;
-  padding: 9.6rem 3rem 9.6rem;
+  padding: 16.2rem 3rem 9.6rem;
   z-index: 50;
   position: relative;
-  margin-top: 6.6rem;
 }
 .header .ctas {
   width: 80%;
@@ -104,7 +104,7 @@
 @media only screen and (min-width: 645px) {
   .header {
     background-image: linear-gradient(to right, rgba(48, 48, 48, 0.3), rgba(48, 48, 48, 0.3)), url("../img/headerbg1.jpg");
-    padding: 14rem 3rem 24rem;
+    padding: 20.6rem 3rem 24rem;
   }
   .header .ctas {
     width: 46.4rem;
