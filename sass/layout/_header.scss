@@ -1,0 +1,35 @@
+.header {
+    background-image: linear-gradient(to right, rgba(48,48,48,0.3),rgba(48,48,48,0.3)), url('../img/headerbg1-mob.jpg');
+    background-position: center;
+    min-height: 40rem;
+    background-size: cover;
+    padding: 9.6rem 3rem 9.6rem;
+    z-index: 50;
+    position: relative;
+
+    .ctas {
+        width: 80%;
+        margin: 3.2rem auto 0rem;
+    }
+
+    @media only screen and (min-width:540px) {
+        padding: 14.8rem 3rem 14.8rem;
+        min-height: 50rem;
+
+        .ctas {
+            display: flex;
+            justify-content: space-around;    
+            width: 42.4rem;
+        }
+    }
+
+    @media only screen and (min-width: 645px) {
+        background-image: linear-gradient(to right, rgba(48,48,48,0.3),rgba(48,48,48,0.3)), url('../img/headerbg1.jpg');
+        // background-attachment: fixed;
+        padding: 14rem 3rem 24rem;
+
+        .ctas {
+            width: 46.4rem;
+        }
+    }
+}
