@@ -274,6 +274,9 @@ body {
   font-size: 1.6rem;
   font-weight: 700;
 }
+.navbar-nav li {
+  font-size: 1.8rem;
+}
 .navbar-nav li a {
   color: #303030;
 }
