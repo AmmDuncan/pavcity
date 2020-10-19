@@ -78,7 +78,7 @@
 }
 
 .header {
-  background-image: linear-gradient(to right, rgba(48, 48, 48, 0.3), rgba(48, 48, 48, 0.3)), url("../img/headerbg1-mob.jpg");
+  background-image: linear-gradient(45deg, rgba(204, 142, 42, 0.2), rgba(48, 48, 48, 0.3)), url("../img/headerbg1.jpg");
   background-position: center;
   min-height: 40rem;
   background-size: cover;
@@ -103,7 +103,7 @@
 }
 @media only screen and (min-width: 645px) {
   .header {
-    background-image: linear-gradient(to right, rgba(48, 48, 48, 0.3), rgba(48, 48, 48, 0.3)), url("../img/headerbg1.jpg");
+    background-image: linear-gradient(45deg, rgba(204, 142, 42, 0.2), rgba(48, 48, 48, 0.3)), url("../img/headerbg1.jpg");
     padding: 20.6rem 3rem 24rem;
   }
   .header .ctas {
@@ -214,7 +214,7 @@
 }
 
 footer {
-  background-color: #0a41a1;
+  background-color: #041C47;
   padding: 8.8rem 6.4rem 6.4rem;
 }
 footer > *:not(:first-child) {
