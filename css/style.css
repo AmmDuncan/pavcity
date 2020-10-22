@@ -486,6 +486,7 @@ footer > * h2::after {
   background-color: #1455c5;
   display: block;
   width: 3.2rem;
+  background-color: #fff;
   margin: 0.5rem 0 0.8rem;
 }
 footer > * ul {
