@@ -91,7 +91,7 @@
   position: relative;
 }
 .header .ctas {
-  width: 80%;
+  width: 90%;
   margin: 3.2rem auto 0rem;
 }
 @media only screen and (min-width: 540px) {
@@ -99,6 +99,7 @@
     padding: 10.5rem 3rem 14.8rem;
     min-height: 50rem;
     background-size: cover;
+    background-position: center;
   }
   .header .ctas {
     display: flex;
@@ -109,7 +110,7 @@
 @media only screen and (min-width: 645px) {
   .header {
     background-image: linear-gradient(45deg, rgba(204, 142, 42, 0.2), rgba(48, 48, 48, 0.3)), url("../img/headerbg1.jpg");
-    padding: 20.6rem 3rem 24rem;
+    padding: 14.6rem 3rem 24rem;
   }
   .header .ctas {
     width: 46.4rem;
@@ -359,13 +360,13 @@ body {
   line-height: 110%;
   position: relative;
   text-transform: uppercase;
-  margin-bottom: 1.6rem;
+  margin-bottom: 2rem;
   color: #fcfcfc;
 }
 .header .content .aside {
   font-family: "Raleway";
-  font-size: 1.6rem;
-  margin-bottom: 6.4rem;
+  font-size: 1.8rem;
+  margin-bottom: 5.4rem;
 }
 @media only screen and (min-width: 768px) {
   .header .content .main {
