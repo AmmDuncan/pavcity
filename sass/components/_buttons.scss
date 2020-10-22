@@ -53,6 +53,8 @@
         background-color: $color-white-light;
         color: $color-primary;
         margin-top: 2rem;
+        padding: 16px 48px;
+
 
         &:hover{
             background-color: $color-white-light-darker;
@@ -68,4 +70,42 @@
             }
         }
     }
+}
+
+.books-container {
+
+.primary {
+    @include btnbasic;
+    background-color: $color-primary;
+    color: $color-white-light;
+
+    &:hover{
+        background-color: $color-primary-darker;
+    }
+}
+.secondary {
+    @include btnbasic;
+    // background-color: $color-white-light;
+    color: $color-primary;
+    border: 1px solid $color-primary;
+    margin-top: 12px;
+    padding: 16px 32px;
+
+    &:hover{
+        background-color: $color-primary;
+        color: #fff;
+    }
+
+    &:active{
+        background-color: $color-blue-dark;
+        color: #fff;
+    }
+
+    @media screen and (max-width: 575px) {
+        display: flex;
+        justify-content: center;
+        margin-top: 24px;
+    }
+}
+
 }

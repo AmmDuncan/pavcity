@@ -184,7 +184,6 @@ footer {
             &::after {
                 @include afterdash;
                 width: 3.2rem;
-                background-color: $color-white-light;
                 margin: 0.5rem 0 0.8rem;
             }
         }
@@ -202,3 +201,54 @@ footer {
         }
     }
 }
+
+article {
+
+    p, ul {
+        @media screen and (min-width: 992px) {
+            font-size: 18px;
+            line-height: 160%;
+        }
+    } 
+
+    .book-title {
+        font-weight: 700;
+        font-size: 24px;
+        // letter-spacing: -0.8px;
+        // font-family: 'Montserrat', sans-serif;
+        text-transform: capitalize;
+        line-height: 1.2;
+    }
+
+    small {
+        font-style: italic;
+        font-size: 14px;
+        color: #555;
+        margin-top: 12px;
+        display: inline-block;
+    }
+
+    .intro {
+        font-size: 16px;
+        line-height: 145%;
+        margin-top: 12px;
+    }
+} 
+
+.books-container {
+    h1 {
+        font-weight: 700;
+        font-family: "Montserrat";
+        font-size: 3.2rem;
+
+        @media only screen and (min-width: 768px) {
+            font-size: 3.6rem;
+        }
+
+        &::after{
+            @include afterdash;
+            margin: .8rem 0 2.4rem;
+        }
+    }
+}
+

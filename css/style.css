@@ -188,6 +188,7 @@
   background-color: #fcfcfc;
   color: #1455c5;
   margin-top: 2rem;
+  padding: 16px 48px;
 }
 @media only screen and (min-width: 540px) {
   .ctas .secondary {
@@ -210,6 +211,67 @@
   }
   .ctas .secondary:hover {
     background-color: #e9ecf1;
+  }
+}
+
+.books-container .primary {
+  display: block;
+  font-size: 1.6rem;
+  padding: 1.2rem;
+  font-weight: 500;
+  background-color: #1455c5;
+  color: #fcfcfc;
+}
+@media only screen and (min-width: 540px) {
+  .books-container .primary {
+    padding: 1.2rem 2.4rem;
+    display: inline-block;
+  }
+}
+@media only screen and (min-width: 645px) {
+  .books-container .primary {
+    padding: 1.2rem 3.2rem;
+    display: inline-block;
+  }
+}
+.books-container .primary:hover {
+  background-color: #0a41a1;
+}
+.books-container .secondary {
+  display: block;
+  font-size: 1.6rem;
+  padding: 1.2rem;
+  font-weight: 500;
+  color: #1455c5;
+  border: 1px solid #1455c5;
+  margin-top: 12px;
+  padding: 16px 32px;
+}
+@media only screen and (min-width: 540px) {
+  .books-container .secondary {
+    padding: 1.2rem 2.4rem;
+    display: inline-block;
+  }
+}
+@media only screen and (min-width: 645px) {
+  .books-container .secondary {
+    padding: 1.2rem 3.2rem;
+    display: inline-block;
+  }
+}
+.books-container .secondary:hover {
+  background-color: #1455c5;
+  color: #fff;
+}
+.books-container .secondary:active {
+  background-color: #06369d;
+  color: #fff;
+}
+@media screen and (max-width: 575px) {
+  .books-container .secondary {
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
   }
 }
 
@@ -419,7 +481,6 @@ footer > * h2::after {
   background-color: #1455c5;
   display: block;
   width: 3.2rem;
-  background-color: #fcfcfc;
   margin: 0.5rem 0 0.8rem;
 }
 footer > * ul {
@@ -428,6 +489,50 @@ footer > * ul {
 }
 footer > * ul li a {
   color: #fcfcfc;
+}
+
+@media screen and (min-width: 992px) {
+  article p, article ul {
+    font-size: 18px;
+    line-height: 160%;
+  }
+}
+article .book-title {
+  font-weight: 700;
+  font-size: 24px;
+  text-transform: capitalize;
+  line-height: 1.2;
+}
+article small {
+  font-style: italic;
+  font-size: 14px;
+  color: #555;
+  margin-top: 12px;
+  display: inline-block;
+}
+article .intro {
+  font-size: 16px;
+  line-height: 145%;
+  margin-top: 12px;
+}
+
+.books-container h1 {
+  font-weight: 700;
+  font-family: "Montserrat";
+  font-size: 3.2rem;
+}
+@media only screen and (min-width: 768px) {
+  .books-container h1 {
+    font-size: 3.6rem;
+  }
+}
+.books-container h1::after {
+  content: "";
+  height: 2px;
+  width: 6.4rem;
+  background-color: #1455c5;
+  display: block;
+  margin: 0.8rem 0 2.4rem;
 }
 
 .limit {
@@ -671,6 +776,36 @@ footer > * ul li a {
   .with-us .content .schedule .day .time {
     display: inline-block;
   }
+}
+
+.books-container {
+  padding: 12rem 0 5rem;
+  max-width: 750px;
+  margin: auto;
+  min-height: 60rem;
+}
+.books-container article {
+  padding: 16px 0 32px;
+  border-bottom: 1px solid #e9ecf1;
+}
+.books-container article .btn-sec {
+  margin-top: 1rem;
+}
+
+.book-img {
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  align-self: flex-start;
+}
+@media screen and (max-width: 575px) {
+  .book-img {
+    max-width: 240px;
+  }
+}
+
+.img-cont {
+  display: flex;
 }
 
 /*# sourceMappingURL=style.css.map */
