@@ -1,10 +1,14 @@
 .navbar {
-    background-color: #FCFCFC;
+    background-color: #fff;
     padding: 0.8rem 1.6rem;
     position: fixed;
     width: 100%;
     z-index: 1000;
     top: 0;
+
+    &.over {
+        box-shadow: 0 16px 60px rgba(65,65,65,0.1);
+    }
 
     &-brand {
         display: inline-flex;
@@ -64,7 +68,7 @@
                 padding: 0.2rem 0.5rem;
                 align-self: center;
                 &.active{
-                    background-color: $color-white-light;
+                    background-color: #fff;
     
                     a {
                         color: $color-primary;
